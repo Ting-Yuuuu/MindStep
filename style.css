@@ -1,0 +1,440 @@
+@import url(./reset.css);
+
+body{
+    font-family: "Noto Sans";
+}
+
+wrapper{
+    width: 100vw;
+}
+
+/* -----------頁首------------ */
+header{
+    height: 80px;
+    background: linear-gradient(90deg, rgba(192, 212, 236, 0.86) 61.17%, rgba(188, 222, 199, 0.90) 83.67%);
+    display: flex;
+}
+
+header img{
+    height: 80px;
+    margin-left: 20px;
+}
+
+header .class{
+    display: flex;
+    border: 1px solid #3E528F;
+    width: 120px;
+    height: 38px;
+    margin: auto 0 auto 20px;
+    cursor: pointer;
+}
+
+.class p{
+    color: #3E528F;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 38px;
+    margin-left: 20px;
+}
+
+.class .fa-angle-down{
+    color: #3E528F;
+    margin-left: 4px;
+    line-height: 38px;
+}
+
+.search{
+    width: 353px;
+    height: 40px;
+    border: 1px solid #3E528F;
+    background-color: #fff;
+    border-radius: 4px;
+    position: relative;
+    margin-left: 430px;
+    justify-content: center;
+    margin: auto 0px auto 24vw;
+}
+
+.search input{
+    border: none;
+    height: 38px;
+    width: 290px;
+    margin-left: 50px;
+}
+
+.search input:focus{
+    outline: none;
+}
+
+.search .fa-magnifying-glass{
+    color: #3E528F;
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+header ul{
+    display: flex;
+    margin: auto 0;
+}
+
+header li a{
+    display: block;
+    color: #2A7147;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid #2A7147;
+    height: 38px;
+    line-height: 38px;
+    padding: 0 12px;
+    margin-left: 16px;
+}
+
+header li a:hover{
+    background-color: #2A7147;
+    color: #DAF1E0;
+    border: 1px solid #DAF1E0;
+}
+
+/* -------------上方圖片區------------ */
+.top{
+    display: flex;
+}
+
+.top img{
+    width: 50vw;
+}
+
+.top-text{
+    background-color: #DAF1E0;
+    width: 50vw;
+    padding-left: 40px;
+    height: 278px;
+}
+
+.top-text a{
+    text-decoration: none;
+}
+
+.top-text h1{
+    color: #1D5F3F;
+    font-family: "Racing Sans One";
+    font-size: 64px;
+    font-weight: 400;
+    margin-top: 50px;
+}
+
+.top-text h3{
+    color: #359461;
+    font-family: "Racing Sans One";
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.top-text p{
+    color: #808080;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 12px;
+    line-height: 1.5;
+}
+
+/* -------------中間卡片區--------------- */
+main{
+    margin: 0 auto;
+    width: 80vw;
+}
+
+main h2{
+    color: #4763AE;
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 40px;
+}
+
+main h2+a{
+    display: block;
+    color: #4763AE;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: right;
+}
+
+main h2+a:hover{
+    color: #658dcc;
+}
+
+/* ---------------卡片列表---------------- */
+
+.card-list{
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+/* --------------- 卡片一 ---------------- */
+.card1{
+    width: 348px;
+    height: 366px;
+    border: 2px solid #C0D4EC;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.10);
+}
+
+.card1 a, .card2 a{
+    text-decoration: none;
+}
+
+.card1:hover{
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.15);
+}
+
+.card2{
+    width: 348px;
+    height: 366px;
+    border: 2px solid #DBF0DF;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.10);
+}
+
+.card2:hover{
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.15);
+}
+
+/* --------------卡片圖片---------------- */
+
+.card1 .pic, .card2 .pic{
+    position: relative;
+}
+
+.category{
+    width: 64px;
+    height: 25px;
+    background-color: #C0D4EC;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 25px;
+    color: #545454;
+    font-size: 12px;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+}
+
+.pic img{
+    border-radius: 8px;
+}
+
+/* --------------卡片文字--------------- */
+.text{
+    padding: 0 20px;
+}
+
+.title{
+    display: flex;
+    margin-top: 16px;
+}
+
+.mark{
+    width: 40px;
+    height: 20px;
+    border-radius: 4px;
+    background-color: #5DAA78;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    line-height: 20px;
+}
+
+.mark2{
+    width: 40px;
+    height: 20px;
+    border-radius: 4px;
+    background-color: #658DCC;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    line-height: 20px;
+}
+
+.title h5{
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    margin-left: 16px;
+    line-height: 1.1;
+}
+
+.information{
+    margin-top: 16px;
+}
+
+.information ul{
+    display: flex;
+}
+
+.information li{
+    color: #9A9A9A;
+    font-size: 16px;
+}
+
+.card1 .information li i{
+    color: #9A9A9A;
+    font-size: 16px;
+}
+
+.information li:nth-child(2){
+    margin-left: 12px;
+}
+
+.information li:nth-child(3){
+    margin-left: 12px;
+}
+
+
+.price{
+    margin-top: 16px;
+}
+
+.text .price h4{
+    font-size: 20px;
+    color: #4763AE;
+    font-weight: bold;
+}
+
+.price p{
+    font-size: 14px;
+    color: #9A9A9A;
+    margin-top: 16px;
+    text-align: right;
+}
+
+/* ----------------頁尾------------------- */
+footer{
+    width: 70vw;
+    margin: 60px auto 130px;
+}
+
+.green ,.blue{
+    display: flex;
+    margin: 16px 0px;
+}
+
+.blue{
+    justify-content: end;
+}
+
+footer li{
+    margin: 0 4px;
+}
+
+footer li:hover{
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.15);
+}
+
+footer li a{
+    display: block;
+    width: 120px;
+    height: 46px;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+    line-height: 46px;
+    color: #fff;
+}
+
+.gray{
+    color: #6a6a6a;
+}
+
+footer .green li:nth-child(1){
+    background-color: #DBF0DF;
+    color: #6a6a6a;
+    border-radius: 100px;
+    border:1px solid #D9D9D9;
+}
+
+footer .green li:nth-child(2){
+    background-color: #BAE0C3;
+    color: #6a6a6a;
+    border-radius: 100px;
+    border:1px solid #D9D9D9;
+}
+
+
+footer .green li:nth-child(3){
+    background-color: #8DC8A0;
+    color: #6a6a6a;
+    border-radius: 100px;
+    border:1px solid #D9D9D9;
+}
+
+footer .green li:nth-child(4){
+    background-color: #5DAA78;
+    color: #6a6a6a;
+    border-radius: 100px;
+    border:1px solid #D9D9D9;
+}
+
+footer .green li:nth-child(5){
+    background-color: #398958;
+    color: #6a6a6a;
+    border-radius: 100px;
+    border:1px solid #D9D9D9;
+}
+
+footer .green li:nth-child(6){
+    background-color: #2A7147;
+    color: #6a6a6a;
+    border-radius: 100px;
+    border:1px solid #D9D9D9;
+}
+
+/* --------------藍色------------------ */
+
+footer .blue li:nth-child(1){
+    background-color: #E3EBF6;
+    color: #6a6a6a;
+    border-radius: 100px;
+    border:1px solid #D9D9D9;
+}
+
+footer .blue li:nth-child(2){
+    background-color: #C0D4EC;
+    color: #6a6a6a;
+    border-radius: 100px;
+    border:1px solid #D9D9D9;
+}
+
+
+footer .blue li:nth-child(3){
+    background-color: #ABC7E5;
+    color: #6a6a6a;
+    border-radius: 100px;
+    border:1px solid #D9D9D9;
+}
+
+footer .blue li:nth-child(4){
+    background-color: #82AAD8;
+    color: #6a6a6a;
+    border-radius: 100px;
+    border:1px solid #D9D9D9;
+}
+
+footer .blue li:nth-child(5){
+    background-color: #658DCC;
+    color: #6a6a6a;
+    border-radius: 100px;
+    border:1px solid #D9D9D9;
+}
+
+footer .blue li:nth-child(6){
+    background-color: #5175BF;
+    color: #6a6a6a;
+    border-radius: 100px;
+    border:1px solid #D9D9D9;
+}

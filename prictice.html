@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS prictice</title>
+</head>
+<body>
+    <script>
+        let apple = 'apple';
+        console.log(typeof apple);
+        let anser = typeof apple;
+        console.log(anser);
+        console.log(apple);
+
+        let name = 'william';
+        {
+            console.log(name);   
+        }
+
+        let i = 0;
+        do {
+            console.log(i);
+            i++;
+        } while (i < 10);
+
+
+        // 將字串左側補'0'，直到字串長度10
+
+        let money = '123.45';
+
+        // *註: length可取得字串的長度
+        while (money.length < 10) {
+            money = '0' + money;
+        }
+
+        console.log(money);
+
+        for(i = 1;i <= 10;i++){
+            console.log(i)
+        }
+
+        for (let i = 0; i < 10; i++) {
+        console.log(i + 1);
+}
+
+        // 印出1~30中，3的倍數
+        for (let n = 1; n <= 30; n++) {
+            // 若不是3的倍數，就跳過這一輪
+            if (n % 3 !== 0) {
+                continue;
+            }
+            console.log(n);
+        }
+
+
+        for(let m=1 ; m<= 30 ; m++){
+            if(m%3 !== 0 || m%4 !== 0){
+                continue;
+            }
+            console.log(m);
+        }
+
+
+        for(let k =2; k<=32 ; k+=3){
+            console.log(k)
+        }
+
+        let arr = ['a', 'B', 'c', 'd', 'e'];
+        console.log('before: ', arr);
+
+        arr[1] = 'b';
+        console.log('after: ', arr);
+
+        const mySkills = ['javascript', 'java', 'sql', 'c', 'python', 'php', 'swift'];
+
+        for (let index = 0; index < mySkills.length; index++) {
+            console.log(mySkills[index]);
+        }
+
+        const arr1 = [3, 5, 2, 1, 4];
+        arr1.sort();
+        console.log(arr1);
+
+
+
+  
+
+
+
+    </script>
+</body>
+</html>
